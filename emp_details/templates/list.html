@@ -1,0 +1,11 @@
+<table style="width:100%">
+  <tr>
+    <th>Employee Name</th>
+    <th>Employee Salary</th>
+  </tr>
+  {% for employ in emp %}
+  <tr>
+  	<td>{{employ.employee_name}}</td>
+  	<td>{{employ.employee_salary}}</td>
+  </tr>
+  {% endfor %}

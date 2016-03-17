@@ -1,0 +1,32 @@
+<h1>Welcome to Fetchr!!!!</h1>
+
+
+<!-- 
+
+<form method='POST' action=''>{%csrf_token%}
+{{form.as_p}}
+
+<form method='submit' value='Ok'/>
+
+</form>
+ -->
+
+<!-- 
+
+{{ variable }} -->
+
+
+<form action='/emp_details/' method='POST'>{% csrf_token %}
+ {{ form }}
+    <div >
+        <label for='employeename'> Employee name </label>
+        <input type='text' name='employeename' id='employeename'>
+        <label for='employee salary'>Employee salary </label>
+        <input type='employeesalary' name='employeesalary' id='employeesalary'>
+        <input type='submit' value='Register'>
+    </div>
+</form>
+
+
+<!-- <h1>Emplayee Name: {{name}}</h1>
+<h1>Salary : {{salary}}</h1> -->
